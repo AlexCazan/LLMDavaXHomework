@@ -1,5 +1,7 @@
 # Book Recommendation Chatbot
 
+A simple AI-powered chatbot that recommends books and retrieves summaries based on user queries. It uses GPT-4o and OpenAI embeddings for natural language understanding, combined with ChromaDB for vector search. Users can input thematic or title-based prompts and receive relevant book summaries extracted from a structured PDF file.
+
 ## Project Structure
 
 ```
