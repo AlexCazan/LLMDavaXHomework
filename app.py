@@ -165,14 +165,17 @@ def main():
         placeholder="E.g.: I want a book about friendship and magic...",
     )
 
-    if user_question:
-        reply = chat_with_rag_and_tool(
-            user_text=user_question,
-            books=books,
-            collection=collection,
-            uploader=uploader,
-        )
-        st.write(reply)
+    if st.button("Search"):
+        if user_question.strip():
+            reply = chat_with_rag_and_tool(
+                user_text=user_question,
+                books=books,
+                collection=collection,
+                uploader=uploader,
+            )
+            st.write(reply)
+        else:
+            st.warning("Please enter a query before searching.")
 
     # Display the total number of stored books
     try:
