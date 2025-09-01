@@ -158,7 +158,7 @@ def main():
 
     # Streamlit UI configuration
     st.set_page_config(page_title="Book Recommendation Chatbot", layout="centered")
-    st.title("🤖 Book Recommendation Chatbot with RAG, GPT & TTS")
+    st.title("🤖 Book Recommendation Chatbot with RAG, GPT")
 
     user_question = st.text_input(
         "How can I help you with a book recommendation?",
@@ -172,7 +172,7 @@ def main():
             collection=collection,
             uploader=uploader,
         )
-    st.write(reply)
+        st.write(reply)
 
     # Display the total number of stored books
     try:
